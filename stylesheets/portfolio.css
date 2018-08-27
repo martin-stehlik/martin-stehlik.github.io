@@ -2,9 +2,15 @@
     box-sizing: border-box;
 }
 
+p {
+    font-size: 19px;
+
+}
+
 body {
     margin: 0;
     font-family: "Courier New", Courier, monospace;
+    color: 
 }
 
 button {
@@ -78,7 +84,8 @@ button {
     border: 1px solid black;
     position: relative;
     bottom: 10%;
-    text-align: center
+    text-align: center;
+    border-radius: 3px;
 }
 
 @media (max-width: 575.98px) {
@@ -119,19 +126,54 @@ hr {
     opacity: 1;
 }
 
-.filler {
-    padding-bottom: 800px;
-}
-
 
 /* SECTIONS */ 
 
 .section {
     margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    max-width: 1000px;
-    border-right: 2px solid #888;
-    border-left: 2px solid #888;
+    padding-right: 60px;
+    padding-left: 60px;
+    max-width: 960px;
+    border-right: 1px solid #BBB;
+    border-left: 1px solid #BBB;
+    margin-bottom: 3rem;
 }
 
+.section:nth-of-type(1){
+    margin-top: 4rem;
+}
+
+/* media object */ 
+
+.project-block {
+    margin-bottom: 2rem;
+}
+
+.project-block:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.project-block > img {  
+    width: 35%;
+    box-shadow: 0px 0px 2px #bbb;
+    float: left;
+    border-radius: 3px;
+}
+
+.project-block > .project-text {
+    padding-left: calc(35% + 30px);
+}
+
+
+
+@media (max-width: 767.98px) {
+    .project-block > img { 
+        float: none;
+        width: 100%;
+    }
+    .project-block > .project-text {
+        padding-left: inherit;
+    }
+}

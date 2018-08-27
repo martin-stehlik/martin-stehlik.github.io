@@ -19,7 +19,7 @@
 /* Smooth scroll with jQuery */ 
 $("nav a").click(function() {
     var targetId = $(this).attr("href");   // save href attr of the anchor tag 
-    $("html, body").animate({scrollTop: $(targetId).offset().top - 15}, 700); // animate html (and body) scrollTop property to the offset().top position of the target 
+    $("html, body").animate({scrollTop: $(targetId).offset().top - 20}, 700); // animate html (and body) scrollTop property to the offset().top position of the target 
     return false; // prevent default direct jump and event bubbling  
 });
 
