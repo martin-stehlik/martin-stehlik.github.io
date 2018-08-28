@@ -16,6 +16,7 @@ html {
 
 h1, h2, h3, h4, strong, b {
     font-weight: 500;
+    margin: 1rem 0;
     color: #333;
 }
 
@@ -39,7 +40,6 @@ h3 {
 
 h4 {
     font-size: 1.125rem;
-    margin: 1rem 0;
 }
 
 footer p {
@@ -189,7 +189,7 @@ hr {
     padding-left: 70px;
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     border-radius: 5px;
 }
 
@@ -200,12 +200,12 @@ hr {
         padding-left: 0;
     }
     .section:not(:last-child){
-        padding-bottom: 1rem;
+        padding-bottom: 1.3rem;
         background-image: linear-gradient(to right, #bbb , #bbb);
         background-position: center 100%;
         background-repeat: no-repeat;
         background-size: 120px 1px;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.7rem;
     }
 }
 
