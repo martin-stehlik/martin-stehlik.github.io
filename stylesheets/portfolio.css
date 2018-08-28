@@ -200,19 +200,19 @@ hr {
         padding-left: 0;
     }
     .section:not(:last-child){
-        padding-bottom: 1.3rem;
+        padding-bottom: 1rem;
         background-image: linear-gradient(to right, #bbb , #bbb);
         background-position: center 100%;
         background-repeat: no-repeat;
         background-size: 120px 1px;
-        margin-bottom: 1.7rem;
+        margin-bottom: 2rem;
     }
 }
 
 
 
 .section:nth-of-type(1){
-    margin-top: 3.5rem;
+    margin-top: 3rem;
 }
 
 /* media object */ 
