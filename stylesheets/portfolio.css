@@ -58,11 +58,29 @@ main {
     display: block; /* IE */ 
 }
 
+
 button {
     background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
+
+}
+
+.button-primary {
+    padding: 0.75rem 1.5rem;
+    color:#19547b;
+    -webkit-box-shadow: 0 0 0 1px #19547b inset;
+    box-shadow: 0 0 0 1px #19547b inset;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.button-primary:hover {
+    color:#143f5c;
+    -webkit-box-shadow: 0 0 0 1px #143f5c  inset;
+    box-shadow: 0 0 0 1p #143f5c inset;
 }
 
 .menu {
@@ -76,6 +94,7 @@ button {
     -webkit-transition: width 0.5s; /* Safari */
     transition: width 0.5s;
     background-color: rgba(0, 0, 0, 0.75);
+    z-index: 1;
 }
 
 .menu-hidden {
@@ -118,35 +137,45 @@ button {
     padding-right: 15px;
     padding-left: 15px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center; 
     /* parallax */
-    background-attachment: fixed;
+    background-attachment: fixed; 
 }
 
 .header-introduction {
-    width: 400px;
-    border: 1px solid #111;
+    width: 440px;
+    border: 1px solid #555;
     position: relative;
     bottom: 10%;
     text-align: center;
     border-radius: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+.header-link {
+    font-size: 1.5rem;
+    color: #333;
+    opacity: 0.8;
+}
+
+.wrap {
+    position: relative;
+    top: 15%;
+}
+
 
 @media (max-width: 575.98px) {
     .header-introduction {
-        width: 90%;
+        width: 95%;
     }
 }
 
 
-
-hr {
-    width: 15%;
-}
-
 .toggler {
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     top: 15px;
     right: 15px; 
@@ -209,11 +238,16 @@ hr {
     }
 }
 
-
-
 .section:nth-of-type(1){
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
+
+@media(max-width: 767.98px){
+    .section:nth-of-type(1){
+        margin-top: 3rem;
+    }
+}
+
 
 /* media object */ 
 
@@ -228,19 +262,20 @@ hr {
 }
 
 .project-block > img {  
-    width: 33%;
+    width: 40%;
     box-shadow: 0px 0px 2px #bbb;
     float: left;
     border-radius: 3px;
 }
 
 .project-block > .project-text {
-    padding-left: calc(33% + 30px);
+    padding-left: calc(40% + 35px);
 }
 
-
-
 @media (max-width: 575.98px) {
+    .project-block {
+        margin-bottom: 2.3rem;
+    }
     .project-block > img { 
         float: none;
         width: 100%;
@@ -249,7 +284,7 @@ hr {
         padding-left: inherit;
     }
     .project-block:not(:last-child) {
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         background-image: linear-gradient(to right, #bbb , #bbb);
         background-position: center 100%;
         background-repeat: no-repeat;
