@@ -130,14 +130,10 @@ button {
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
 }
-
 .menu a:hover {
     color:#ffd89b;
 }
 
-.menu li {
-    
-}
 
 .header {
     background: #19547b;  /* fallback for old browsers */
@@ -165,17 +161,28 @@ button {
     padding-right: 15px;
 }
 
-.header-link {
-    font-size: 1.5rem;
+.header-links {
+    position: relative;
+    top: 15%;
+}
+
+.header-links a {
+    font-size: 1.6rem;
+    padding: 0.2rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
     color: #333;
     opacity: 0.8;
 }
-
-.wrap {
-    position: relative;
-    top: 17%;
+.header-links a:hover {
+    color: #19547b;
+    opacity: 1; 
 }
 
+.far.fa-envelope{
+    padding-left: 0.04em;
+    vertical-align: -0.04em;
+}
 
 @media (max-width: 575.98px) {
     .header-introduction {
@@ -183,16 +190,19 @@ button {
     }
 }
 
-
 .toggler {
     z-index: 2;
     position: fixed;
     top: 15px;
     right: 15px; 
     padding: 5px;
-    color: #222;
+    color: #333;
     font-size: 1.7rem;
     opacity: 0.8;
+}
+.toggler:hover {
+    color: #19547b;
+    opacity: 1;
 }
 
 .toggler-on {
@@ -200,12 +210,6 @@ button {
     font-size: 1.8rem;
     opacity: 1;
 }
-
-.toggler:hover {
-    color: #19547b;
-    opacity: 1;
-}
-
 .toggler-on.toggler:hover {
     color: #19547b;
     opacity: 1;

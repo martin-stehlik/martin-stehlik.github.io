@@ -3,7 +3,7 @@ $('a[href*="#"]').click(function(){
 	// save href attr of the anchor tag
 	  let targetId = $(this).attr("href");    
 	// animate html and body scrollTop property to the offset().top position of the target
-	  $("html, body").animate({scrollTop: $(targetId).offset().top - 20}, 700);  
+	  $("html, body").animate({scrollTop: $(targetId).offset().top - 25}, 700);  
     return false; // prevent default direct jump and event bubbling  
 });
 
