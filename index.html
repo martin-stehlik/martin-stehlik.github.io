@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Martin Stehlík">
+  <meta name="description" content="A self-taught front-end developer.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Martin Stehlík</title>
+  <title>Martin Stehlík – Webdev projects</title>
+  <!-- Basic favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
   <!-- Font awesome cdn -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <!--- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500&amp;subset=latin-ext" rel="stylesheet">
   <!-- Normalize.css-->
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/lib/normalize.css">
   <!-- Custom styles -->
   <link rel="stylesheet" type="text/css" href="stylesheets/portfolio.css">
 </head>
 
 <body>
-  
+  <!-- Header -->
+  <header class="header" id="top">
+      <div class="header-introduction">
+        <h1>Martin Stehlík</h1>  
+        <p>A self-taught front-end developer</p>
+        <a href="#projects" class="button button-primary">Check my work</a>
+      </div> 
+      <div class="header-links">
+          <address>
+            <!-- <a><i class="fab fa-linkedin-in"></i></a> -->
+            <a href="https://github.com/martin-stehlik" target="_blank" title="GitHub profile"><i class="fab fa-github"></i></a>
+            <a href="mailto:mn.stehlik@seznam.cz" title="Send me an email"><i class="far fa-envelope"></i></a>
+        </address>
+      </div> 
+    </header>
+
+
+  <!-- Navigation -->
   <nav>
-    <button type="button" class="toggler" id="js-toggler"><i class="fas fa-bars"></i></button>
+    <button type="button" class="toggler" id="js-toggler">
+      <i class="fas fa-bars"></i>
+    </button>
     <div class="menu menu-hidden" id="js-menu">
       <div class="menu-container">
         <ul>
@@ -28,22 +51,7 @@
       </div>
     </div>
   </nav>
-  
-  <header class="header" id="top">
-    <div class="header-introduction">
-      <h1>Martin Stehlík</h1>  
-      <p>Self-taught Front-end Developer</p>
-      <a href="#projects" class="button button-primary">Check my work</a>
-    </div> 
-    <div class="header-links">
-        <address>
-          <a><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/martin-stehlik" target="_blank"><i class="fab fa-github"></i></a>
-          <a><i class="far fa-envelope"></i></a>
-      </address>
-    </div> 
-  </header>
-  
+
   <main class="container">
     <section class="section" id="about">
       <h2>About</h2> 
@@ -59,7 +67,7 @@
       <div class="project-block">
         <img src="images/cabotra-edit.jpg">
         <div class="project-text">
-          <h4>Company Website</h3>
+          <h4>Company website</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
         </div>
       </div>
@@ -85,8 +93,14 @@
   <footer class="footer">
     <p>&copy; <time id="js-current-year"></time> Martin Stehlík</p>
   </footer>
-
-  <script src="js/lib/jquery-3.3.1.min.js"></script>
+  
+  <!-- jQuery cdn --> 
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!-- Main script file -->
   <script src="js/portfolio.js"></script>
+
 </body>
 </html>
