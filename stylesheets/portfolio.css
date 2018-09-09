@@ -87,10 +87,10 @@ button {
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
     margin-bottom: 3rem;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
-@media (max-width: 1198.98px) {
+@media (max-width: 1199.98px) {
     .section {
         border: none;
         padding-right: 15px;
@@ -148,7 +148,7 @@ button {
     position: relative;
     bottom: 7%;
     text-align: center;
-    border-radius: 3px;
+    border-radius: 5px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -193,7 +193,7 @@ button {
     /* transition */ 
     -webkit-transition: width 0.5s; /* Safari */
     transition: width 0.5s;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
 }
 
