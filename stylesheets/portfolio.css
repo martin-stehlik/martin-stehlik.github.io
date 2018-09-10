@@ -35,9 +35,14 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, strong, b {
+h1, h2, h3, h4, strong {
     font-weight: 500;
     color: #333;
+}
+
+b {
+    font-weight: 400;
+    text-decoration: underline;
 }
 
 h1, h2, h3, h4 {
