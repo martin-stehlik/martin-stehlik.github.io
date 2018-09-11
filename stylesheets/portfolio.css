@@ -151,7 +151,7 @@ button {
     width: 440px;
     border: 1px solid #555;
     position: relative;
-    bottom: 6%;
+    bottom: 5%;
     text-align: center;
     border-radius: 5px;
     padding-left: 15px;
@@ -160,7 +160,7 @@ button {
 
 .header-links {
     position: relative;
-    top: 15%;
+    top: 10%;
 }
 @media(max-height: 450px){
     .header-links {
