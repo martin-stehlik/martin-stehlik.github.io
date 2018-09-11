@@ -32,7 +32,7 @@ body {
     margin: 0;
     font-family: "Roboto Mono", "Courier New", Courier, monospace;
     color: #333;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 h1, h2, h3, h4, strong {
@@ -128,6 +128,7 @@ button {
 /* COMPONENTS */ 
 /* header */ 
 .header {
+    position: relative;
     background: #19547b;  /* fallback for old browsers */
     background: -webkit-linear-gradient(345deg, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(345deg, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -151,7 +152,7 @@ button {
     width: 440px;
     border: 1px solid #555;
     position: relative;
-    bottom: 7%;
+    bottom: 9%;
     text-align: center;
     border-radius: 5px;
     padding-left: 15px;
@@ -159,8 +160,13 @@ button {
 }
 
 .header-links {
-    position: relative;
-    top: 15%;
+    position: absolute;
+    bottom: 20%;
+}
+@media(max-height: 450px){
+    .header-links {
+        bottom: 10%;
+    }
 }
 
 .header-links a {
@@ -256,13 +262,16 @@ button {
     opacity: 1;
 }
 
-/* button */ 
+/* buttons */ 
 .button {
     background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
     text-decoration: none;
+    line-height: 1.5;
+    border-radius: 3px;
+    display: inline-block;
 }
 
 .button-primary {
@@ -273,15 +282,25 @@ button {
     border: 1px solid #19547b;
     margin-bottom: 15px;
     margin-top: 5px;
-    border-radius: 3px;
-    display: inline-block;
-    line-height: 1.5;
 }
 .button-primary:hover {
     color:#143f5c;
     border: 1px solid #143f5c; 
     /* -webkit-box-shadow: 0 0 0 1px #143f5c  inset;
     box-shadow: 0 0 0 1p #143f5c inset; */
+}
+
+.button-small {
+    font-size: 0.889rem;
+    width: 4.5rem;
+    text-align: center;
+    padding: 0.15rem 0.3rem;
+    margin-left: 0.3rem;
+    color: 	rgb(18, 113, 177);
+    border: 1px solid #bbb;
+}
+.button-small:hover {
+    border: 1px solid #888;
 }
 
 /* media object */ 
@@ -327,6 +346,18 @@ button {
         background-position: center 100%;
         background-repeat: no-repeat;
 	    background-size: 70px 1px;
+    }
+}
+
+.project-links {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+@media(min-width: 576px){
+    .project-links {
+        text-align: right;
+        margin-bottom: 0.5rem;
     }
 }
 
