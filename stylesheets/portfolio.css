@@ -128,7 +128,6 @@ button {
 /* COMPONENTS */ 
 /* header */ 
 .header {
-    position: relative;
     background: #19547b;  /* fallback for old browsers */
     background: -webkit-linear-gradient(345deg, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(345deg, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -152,7 +151,7 @@ button {
     width: 440px;
     border: 1px solid #555;
     position: relative;
-    bottom: 9%;
+    bottom: 6%;
     text-align: center;
     border-radius: 5px;
     padding-left: 15px;
@@ -160,12 +159,12 @@ button {
 }
 
 .header-links {
-    position: absolute;
-    bottom: 20%;
+    position: relative;
+    top: 15%;
 }
 @media(max-height: 450px){
     .header-links {
-        bottom: 10%;
+        top: 5%;
     }
 }
 
@@ -350,12 +349,11 @@ button {
 }
 
 .project-links {
-    text-align: center;
+    text-align: right;
     margin-bottom: 1rem;
 }
 @media(min-width: 576px){
     .project-links {
-        text-align: right;
         margin-bottom: 0.5rem;
     }
 }
