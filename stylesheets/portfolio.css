@@ -1,6 +1,7 @@
 /* COLORS
 blue : #19547b
 blue - hover : #143f5c
+blue - brighter : rgb(18, 113, 177)
 yellow : #ffd89b
 font-basic: #333
 font-white : #fff
@@ -22,7 +23,7 @@ html {
     font-size: 16px;
 }
 
-@media (min-width: 576px){
+@media (min-width: 768px){
     html {
         font-size: 17px;
     }
@@ -299,7 +300,7 @@ button {
     border: 1px solid #bbb;
 }
 .button-small:hover {
-    border: 1px solid #888;
+    border: 1px solid rgb(18, 113, 177);
 }
 
 /* media object */ 
