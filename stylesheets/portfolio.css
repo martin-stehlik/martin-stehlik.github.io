@@ -36,8 +36,13 @@ body {
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, strong {
+h2, strong {
     font-weight: 500;
+    color: #333;
+}
+
+h1, h3, h4 {
+    font-weight: 400;
     color: #333;
 }
 
@@ -55,6 +60,7 @@ h1 {
 }
 h2 {
     font-size: 1.424rem;
+    margin-bottom: 1.25rem;
 }
 h3 {
     font-size: 1.266rem;
