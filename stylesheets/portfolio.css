@@ -292,9 +292,9 @@ button {
 
 .button-small {
     font-size: 0.889rem;
-    width: 4.5rem;
+    width: 4.7rem;
     text-align: center;
-    padding: 0.15rem 0.3rem;
+    padding: 0.3rem 0.4rem;
     margin-left: 0.3rem;
     color: 	rgb(18, 113, 177);
     border: 1px solid #bbb;
