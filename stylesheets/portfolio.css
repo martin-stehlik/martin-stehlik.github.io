@@ -7,6 +7,7 @@ font-basic: #333
 font-white : #fff
 font-white-dim : #ddd
 border: #555 , #bbb
+horizontal rule: #ccc
 
 BREAKPOINTS 
 small : min-width: 576px
@@ -36,19 +37,15 @@ body {
     line-height: 1.6;
 }
 
-
 h1, h2, h3, h4 {
     font-weight: 400;
     color: #333;
+    margin: 1rem 0;
 }
 
 b {
     font-weight: 400;
     text-decoration: underline;
-}
-
-h1, h2, h3, h4 {
-    margin: 1rem 0;
 }
 
 h1 {
@@ -105,7 +102,7 @@ button {
     }
     .section:not(:last-child){
         padding-bottom: 1rem;
-        background-image: linear-gradient(to right, #bbb , #bbb);
+        background-image: linear-gradient(to right, #ccc , #ccc);
         background-position: center 100%;
         background-repeat: no-repeat;
         background-size: 120px 1px;
@@ -343,7 +340,7 @@ button {
     }
     .project-block:not(:last-child) {
         padding-bottom: 5px;
-        background-image: linear-gradient(to right, #bbb , #bbb);
+        background-image: linear-gradient(to right, #ccc , #ccc);
         background-position: center 100%;
         background-repeat: no-repeat;
 	    background-size: 70px 1px;
