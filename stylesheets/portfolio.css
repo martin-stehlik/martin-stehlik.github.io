@@ -1,8 +1,8 @@
 /* COLORS
-blue : #19547b
+blue : #19547b / rgb(25, 84, 123)
 blue - hover : #143f5c
 blue - brighter : rgb(18, 113, 177)
-yellow : #ffd89b
+yellow : #ffd89b / 	rgb(255, 216, 155)
 font-basic: #333
 font-white : #fff
 font-white-dim : #ddd
@@ -35,6 +35,7 @@ body {
     font-family: "Roboto Mono", "Courier New", Courier, monospace;
     color: #333;
     line-height: 1.6;
+    background-color: #ffffff;
 }
 
 h1, h2, h3, h4 {
@@ -127,9 +128,9 @@ button {
 /* COMPONENTS */ 
 /* header */ 
 .header {
-    background: #19547b;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(345deg, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(345deg, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgba(25, 84, 123, 0.85); /* fallback for old browsers */
+    background: -webkit-linear-gradient(345deg, rgba(25, 84, 123, 0.8), rgba(25, 84, 123, 0.85));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(345deg, rgba(25, 84, 123, 0.85), rgba(255, 216, 155, 0.85)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100vh;
     padding-right: 15px;
     padding-left: 15px;
