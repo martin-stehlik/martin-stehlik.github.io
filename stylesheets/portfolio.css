@@ -128,9 +128,9 @@ button {
 /* COMPONENTS */ 
 /* header */ 
 .header {
-    background: rgba(25, 84, 123, 0.85); /* fallback for old browsers */
-    background: -webkit-linear-gradient(345deg, rgba(25, 84, 123, 0.8), rgba(25, 84, 123, 0.85));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(345deg, rgba(25, 84, 123, 0.85), rgba(255, 216, 155, 0.85)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgba(25, 84, 123, 0.8); /* fallback for old browsers */
+    background: -webkit-linear-gradient(345deg, rgba(25, 84, 123, 0.8), rgba(25, 84, 123, 0.8));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(345deg, rgba(25, 84, 123, 0.8), rgba(255, 216, 155, 0.8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100vh;
     padding-right: 15px;
     padding-left: 15px;
@@ -363,9 +363,9 @@ button {
     text-align: center;
     margin-top: 6rem;
     padding: 1rem 0;
-    background: rgba(60, 104, 128, 0.6);  /* fallback for old browsers */
-    background: -webkit-linear-gradient(345deg,	rgba(60, 104, 128, 0.6),rgba(220, 196, 150, 0.6));  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(345deg,	rgba(60, 104, 128, 0.6),rgba(220, 196, 150, 0.6)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgba(60, 104, 128, 0.5);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(345deg,	rgba(60, 104, 128, 0.5),rgba(220, 196, 150, 0.5));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(345deg,	rgba(60, 104, 128, 0.5),rgba(220, 196, 150, 0.5)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .footer p {
