@@ -317,11 +317,40 @@ button {
     clear: both;
 }
 
-.project-block > img {  
+.project-image {  
+    position: relative;
     width: 40%;
-    box-shadow: 0px 0px 2px #bbb;
     float: left;
     border-radius: 3px;
+    background-color: #000;
+}
+
+.project-image:hover img {
+    opacity: 0.5;
+}
+
+.project-image:hover > .project-image-text {
+    opacity: 1;
+}
+
+.project-image img {
+    width: 100%;
+    float: left;
+    box-shadow: 0px 0px 2px #bbb;
+    border-radius: 3px;
+    transition: opacity 0.5s;
+}
+
+.project-image > .project-image-text {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.889rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
 .project-block > .project-text {
@@ -332,11 +361,13 @@ button {
     .project-block {
         margin-bottom: 2.3rem;
     }
-    .project-block > img { 
-        float: none;
+    .project-block > .project-image { 
         width: 100%;
     }
+
     .project-block > .project-text {
+        padding-top: 1px;
+        clear: both;
         padding-left: inherit;
     }
     .project-block:not(:last-child) {
