@@ -35,7 +35,7 @@ body {
     font-family: "Roboto Mono", "Courier New", Courier, monospace;
     color: #333;
     line-height: 1.6;
-    background-color: #ffffff;
+    background-color: #fdfdfd;
 }
 
 h1, h2, h3, h4 {
@@ -71,6 +71,14 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+a {
+    color: rgb(18, 113, 177);
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
 }
 
 /* LAYOUT */ 
