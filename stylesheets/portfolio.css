@@ -272,10 +272,7 @@ a:hover {
 /* toggle on touch devices */ 
 .touch-device .toggler:hover {
    color: inherit;
-<<<<<<< HEAD
    opacity: 0.8;
-=======
->>>>>>> 9d110b71b54f46a07bf0cd3fc9fefc06327027ce
 }
 .touch-device .toggler-on.toggler:hover {
     color: #ddd;
