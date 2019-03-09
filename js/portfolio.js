@@ -1,7 +1,10 @@
 // Detect touch device
-window.addEventListener('touchstart', function() {
-  document.body.classList.add('touch-device');
-});
+window.addEventListener('touchstart', detectTouch);
+
+function detectTouch() {
+	document.body.classList.add('touch-device');
+	window.removeEventListener('touchstart', detectTouch);
+}
 
 /* Smooth scroll with jQuery */ 
 $('a[href*="#"]').click(function(){  

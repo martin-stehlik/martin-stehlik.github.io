@@ -5,7 +5,7 @@ blue - brighter : rgb(18, 113, 177)
 yellow : #ffd89b / 	rgb(255, 216, 155)
 font-basic: #333
 font-white : #fff
-font-white-dim : #ddd
+font-white-dim : #eee
 border: #555 , #bbb
 horizontal rule: #ccc
 
@@ -260,7 +260,7 @@ a:hover {
 }
 
 .toggler-on {
-    color: #ddd; 
+    color: #eee; 
     font-size: 1.8rem;
     opacity: 1;
 }
@@ -275,7 +275,7 @@ a:hover {
    opacity: 0.8;
 }
 .touch-device .toggler-on.toggler:hover {
-    color: #ddd;
+    color: #eee;
  }
 
 /* buttons */ 
