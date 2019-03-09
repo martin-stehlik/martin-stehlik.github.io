@@ -269,6 +269,15 @@ a:hover {
     opacity: 1;
 }
 
+/* toggle on touch devices */ 
+.touch-device .toggler:hover {
+   color: inherit;
+   opacity: 0.8;
+}
+.touch-device .toggler-on.toggler:hover {
+    color: #ddd;
+ }
+
 /* buttons */ 
 .button {
     background-color: transparent;
