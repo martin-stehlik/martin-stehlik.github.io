@@ -1,3 +1,8 @@
+// Detect touch device
+window.addEventListener('touchstart', function() {
+  document.body.classList.add('touch-device');
+});
+
 /* Smooth scroll with jQuery */ 
 $('a[href*="#"]').click(function(){  
 	// save href attr of the anchor tag
