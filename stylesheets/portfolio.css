@@ -13,6 +13,7 @@ BREAKPOINTS
 small : min-width: 576px
 medium : min-width: 768px
 large : min-width: 1200px
+super-large: min-width: 1600px
 */
 
 /* BASE STYLES */ 
@@ -21,12 +22,17 @@ large : min-width: 1200px
 }
 
 html {
-    font-size: 16px;
+    font-size: 100%;
 }
 
 @media (min-width: 768px){
     html {
-        font-size: 17px;
+        font-size: 1.0625rem;
+    }
+}
+@media (min-width: 1600px){
+    html {
+        font-size: 1.125rem;
     }
 }
 
@@ -91,6 +97,11 @@ a:hover {
 @media (min-width: 1200px){
     .container {
         max-width: 1040px;
+    }
+}
+@media (min-width: 1600px){
+    .container {
+        max-width: 1200px;
     }
 }
 
