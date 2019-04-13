@@ -30,11 +30,6 @@ html {
         font-size: 1.0625rem;
     }
 }
-@media (min-width: 1600px){
-    html {
-        font-size: 1.125rem;
-    }
-}
 
 body {
     margin: 0;
