@@ -3,7 +3,7 @@ blue : #19547b / rgb(25, 84, 123)
 blue - hover : #143f5c
 blue - brighter : rgb(18, 113, 177)
 yellow : #ffd89b / 	rgb(255, 216, 155)
-font-basic: #333
+font-basic: #222
 font-white : #fff
 font-white-dim : #eee
 border: #555 , #bbb
@@ -34,7 +34,7 @@ html {
 body {
     margin: 0;
     font-family: "Roboto Mono", "Courier New", Courier, monospace;
-    color: #333;
+    color: #222;
     line-height: 1.6;
     background-color: #fdfdfd;
 }
@@ -61,6 +61,7 @@ h3 {
 }
 h4 {
     font-size: 1.125rem;
+    color: #222;
 }
 
 p {
